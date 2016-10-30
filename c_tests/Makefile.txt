@@ -1,0 +1,20 @@
+#
+# Makefile
+#
+#
+Autor: B.Herrmann
+#Erstellt am: 29.6.20134
+
+
+CFLAGS = -W -Wall -ansi -pedantic
+CC = gcc
+RM = rm -f
+TARGETS = filecopy filesize
+
+.PHONY: all clean
+all: $(TARGETS)
+
+
+clean:
+
+	$(RM) $(TARGETS)
